@@ -2,6 +2,7 @@
   <div>
     <WiditradeLogo></WiditradeLogo>
     <Login></Login>
+    <img src="..\static\portatil.png" alt="Person using a laptop." />
   </div>
 </template>
 
@@ -13,3 +14,16 @@ export default {
   components: { WiditradeLogo, Login },
 }
 </script>
+
+<style scoped>
+template {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: #fff;
+}
+
+img {
+  display: none;
+}
+</style>

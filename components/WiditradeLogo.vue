@@ -91,3 +91,13 @@ export default {
   name: 'WiditradeLogo',
 }
 </script>
+
+<style scoped>
+svg {
+  position: absolute;
+  width: 115px;
+  height: 82px;
+  left: calc(50% - 311px / 2);
+  top: 26.35%;
+}
+</style>
