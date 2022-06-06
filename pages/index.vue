@@ -1,28 +1,19 @@
 <template>
-  <div>
-    <WiditradeLogo></WiditradeLogo>
-    <Login></Login>
+  <div class="page">
+    <LoginCard></LoginCard>
     <img src="..\static\portatil.png" alt="Person using a laptop." />
   </div>
 </template>
 
 <script>
-import WiditradeLogo from '~/components/WiditradeLogo.vue'
-import Login from '~/components/Login.vue'
+import LoginCard from '~/components/LoginCard.vue'
 export default {
   name: 'IndexPage',
-  components: { WiditradeLogo, Login },
+  components: { LoginCard },
 }
 </script>
 
 <style scoped>
-template {
-  position: relative;
-  width: 375px;
-  height: 812px;
-  background: #fff;
-}
-
 img {
   display: none;
 }

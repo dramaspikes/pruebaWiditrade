@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: 'LoginBox',
+  name: 'LoginForm',
   data() {
     return {
       input: {
@@ -85,14 +85,6 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&display=swap');
-
-#login-wrapper {
-  position: absolute;
-  width: 82.93%;
-  height: 35.1%;
-  left: 8.53%;
-  top: 45.32%;
-}
 
 .input {
   display: flex;
@@ -138,8 +130,6 @@ label {
   font-weight: 700;
   font-size: 14px;
   line-height: 150%;
-
-  /* identical to box height, or 21px */
 
   /* Label */
   color: #6e7191;
@@ -238,5 +228,87 @@ svg {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+@media screen and (min-width: 720px) {
+  .input {
+    /* Input */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 408px;
+    height: 77px;
+    left: calc(50% - 408px / 2);
+  }
+
+  .password-area {
+    top: 108px;
+  }
+
+  button {
+    /* Button */
+
+    /* Auto layout */
+    width: 408px;
+    height: 52px;
+    left: calc(50% - 408px / 2);
+    top: 233px;
+  }
+
+  input {
+    /* input */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    width: 408px;
+    height: 48px;
+    background: #fff;
+
+    /* Accent */
+    border: 2px solid #4fc2c2;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  :placeholder-shown {
+    /* placeholder */
+    width: 408px;
+    height: 48px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* identical to box height, or 24px */
+
+    /* Body */
+    color: #4e4b66;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  svg {
+    left: 90%;
+  }
 }
 </style>
