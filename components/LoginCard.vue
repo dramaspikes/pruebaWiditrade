@@ -17,10 +17,10 @@ export default {
 <style>
 .logo {
   position: absolute;
-  width: 115px;
-  height: 82px;
   left: calc(50% - 311px / 2);
+  right: 60.8%;
   top: 26.35%;
+  bottom: 63.55%;
 }
 
 .form {
@@ -48,19 +48,36 @@ export default {
 
   .logo {
     /* logo */
-    position: absolute;
-    left: 39.49%;
     top: 16.02%;
-    width: 20.83%;
-    height: 10.95%;
+    left: 39.5%;
+    right: 42.34%;
   }
 
   .form {
     /* login - wrapper */
-    position: absolute;
     width: 408px;
     height: 285px;
-    left: calc(50% - 408px / 2);
+    left: 13.04%;
+    top: 48.68%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    /* logo */
+    left: calc(53.14% - (356px / 2) - 16px);
+    top: 25.39%;
+    bottom: 66.6%;
+  }
+
+  .backlayer {
+    width: 44.17%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    box-shadow: none;
+    border-radius: 0;
   }
 }
 </style>

@@ -186,8 +186,6 @@ input:focus {
   font-size: 16px;
   line-height: 150%;
 
-  /* identical to box height, or 24px */
-
   /* Body */
   color: #4e4b66;
 
@@ -206,8 +204,6 @@ input:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-
-  /* identical to box height, or 24px */
   color: #fff;
 
   /* Inside auto layout */
@@ -235,13 +231,6 @@ svg {
     /* Input */
 
     /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0;
-    gap: 8px;
-    position: absolute;
     width: 408px;
     height: 77px;
     left: calc(50% - 408px / 2);
@@ -256,7 +245,6 @@ svg {
 
     /* Auto layout */
     width: 408px;
-    height: 52px;
     left: calc(50% - 408px / 2);
     top: 233px;
   }
@@ -264,51 +252,50 @@ svg {
   input {
     /* input */
 
-    box-sizing: border-box;
-
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 12px 16px;
     width: 408px;
     height: 48px;
     background: #fff;
-
-    /* Accent */
-    border: 2px solid #4fc2c2;
-    border-radius: 16px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
   }
 
   :placeholder-shown {
     /* placeholder */
     width: 408px;
     height: 48px;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-
-    /* identical to box height, or 24px */
-
-    /* Body */
-    color: #4e4b66;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
   }
 
   svg {
     left: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #login-wrapper {
+    /* login - wrapper */
+    position: absolute;
+    width: 356px;
+    height: 285px;
+    top: 46.68%;
+    left: calc(53.14% - (356px / 2) - 16px);
+  }
+
+  .input {
+    width: 356px;
+    left: calc(53.14% - (356px / 2) - 16px);
+  }
+
+  input {
+    width: 356px;
+  }
+
+  :placeholder-shown {
+    width: 356px;
+  }
+
+  button {
+    width: 356px;
+    left: calc(53.14% - (356px / 2) - 16px);
   }
 }
 </style>
